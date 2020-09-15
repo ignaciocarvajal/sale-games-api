@@ -2,7 +2,7 @@ import { Controller, HttpStatus, Post, Res, Body, Get, Query, NotFoundException,
 import { GamesService } from './games.service';
 import { CreateGamesDTO } from './dto/games.dto';
 
-@Controller('games')
+@Controller('api/games')
 export class GamesController {
     constructor(private readonly gamesService: GamesService) {}
     @Post('/create')
